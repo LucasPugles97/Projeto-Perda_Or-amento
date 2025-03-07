@@ -5,6 +5,6 @@ Desenvolvi uma aplicação web prática e estilosa para facilitar o cálculo do 
 
 Destaques:
 
-Interface responsiva e amigável.
-Cálculo automatizado e exibição clara do resultado.
-Design moderno e adaptável a diferentes dispositivos.
+ - Interface responsiva e amigável.
+ - Cálculo automatizado e exibição clara do resultado.
+ - Design moderno e adaptável a diferentes dispositivos.

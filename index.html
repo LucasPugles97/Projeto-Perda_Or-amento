@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Perda por Orçamento</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Orçamento</h1>
+        <label for="orcamento">Orçamento Diário:</label>
+        <input type="number" id="orcamento" placeholder="Digite o orçamento">
+        <label for="perda">% de Perda (0.25 = 25%):</label>
+        <input type="number" id="perda" step="0.01" placeholder="Digite a % de perda">
+        <button onclick="calcular()">Calcular</button>
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+    <script>
+        function calcular() {
+            const orcamento = parseFloat(document.getElementById('orcamento').value);
+            const perda = parseFloat(document.getElementById('perda').value);
+            if (!isNaN(orcamento) && !isNaN(perda)) {
+                const calculo = orcamento / (1 - perda);
+                document.getElementById('resultado').textContent = 'Resultado: R$ ' + calculo.toFixed(2);
+            } else {
+                document.getElementById('resultado').textContent = 'Por favor, insira valores válidos.';
+            }
+        }
+    </script>
+</body>
+</html>
